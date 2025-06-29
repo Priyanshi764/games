@@ -1,0 +1,41 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e0f7fa;
+  text-align: center;
+  padding: 30px 10px;
+  overflow: hidden;
+}
+
+h1 {
+  color: #0097a7;
+}
+
+#game-area {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  border: 2px solid #00acc1;
+  overflow: hidden;
+  margin-top: 20px;
+  background: #b2ebf2;
+}
+
+.balloon {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50%;
+  box-shadow: inset -4px -4px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  animation: floatUp 5s linear infinite;
+}
+
+@keyframes floatUp {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 100%;
+  }
+}
